@@ -43,15 +43,13 @@ function changeCartValues(price) {
         cartCountField.innerHTML = '0';
     }
 
-    let sum;
     try {
-        sum = addInCartSumChange(+/\d+/.exec(cartSumField.innerHTML), +price);
+        cartSumField.innerHTML  = addInCartSumChange(+/\d+/.exec(cartSumField.innerHTML), +price);
     } catch {
-        sum = '0 ₽'
+        cartSumField.innerHTML  = '0 ₽'
     }
 
-    cartSumField.innerHTML = sum;
-    document.querySelector('#request-sum').innerHTML = sum;
+    document.querySelector('#request-sum').innerHTML = cart.total.total;
 }
 
 function renderCartItems(items) {
