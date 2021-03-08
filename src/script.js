@@ -48,65 +48,42 @@ function changeCartValues(price) {
     }
 }
 
-function renderCartItem({count, price, title}) {
-    const cartItem = document.createElement('div');
-    const cartItemTitle = document.createElement('div');
-    const cartItemSum = document.createElement('div');
-    cartItem.className = 'cart-item';
-    cartItemTitle.innerHTML = `${title}`;
-    cartItemSum.innerHTML = `${count} × ${price} ₽ = ${price * count} ₽`;
-    cartItem.append(cartItemTitle);
-    cartItem.append(cartItemSum);
-    return cartItem;
+function renderCartItems(items) {
+    return items.reduce((acc, item) => acc + renderCartItemWrapper(item), '');
+}
+
+function renderCartItemWrapper(item) {
+    try {
+        return renderCartItem(item);
+    } catch {
+        return `${item.id}${item.title}${item.count}*${item.price}`;
+    }
 }
 
 function renderCartDiscount(discount) {
     const cartDiscount = document.createElement('div');
-    const cartDiscountTitle = document.createElement('div');
-    const cartDiscountSum = document.createElement('div');
     cartDiscount.className = 'cart-item';
-
-    cartDiscountTitle.innerHTML = 'Скидка';
-    cartDiscountSum.innerHTML = `${discount} ₽`;
-
-    cartDiscount.append(cartDiscountTitle);
-    cartDiscount.append(cartDiscountSum);
+    cartDiscount.innerHTML =`<div><strong>Скидка</strong></div><div><strong>${discount} ₽</strong></div>`;
     return cartDiscount;
 }
 
 function renderCartShipping(freeShipping, shipping) {
     const cartShipping = document.createElement('div');
-    const cartShippingTitle = document.createElement('div');
-    const cartShippingSum = document.createElement('div');
     cartShipping.className = 'cart-item';
-
-    cartShippingTitle.innerHTML = 'Доставка';
-    cartShippingSum.innerHTML = (freeShipping) ? 'бесплатно' : `${shipping} ₽`;
-
-    cartShipping.append(cartShippingTitle);
-    cartShipping.append(cartShippingSum);
+    cartShipping.innerHTML = `<div>Доставка</div><div>${(freeShipping) ? 'бесплатно' : shipping} ₽</div>`;
     return cartShipping;
 }
 
 function renderCartTotal(total) {
     const cartTotal = document.createElement('div');
-    const cartTotalTitle = document.createElement('div');
-    const cartTotalSum = document.createElement('div');
     cartTotal.className = 'cart-item';
-
-    cartTotalTitle.innerHTML = '<strong>К оплате<\strong>';
-    cartTotalSum.innerHTML = `<strong>${total} ₽<\strong>`;
-
-    cartTotal.append(cartTotalTitle);
-    cartTotal.append(cartTotalSum);
+    cartTotal.innerHTML = `<div><strong>К оплате</strong></div><div><strong>${total} ₽</strong></div>`;
     return cartTotal;
 }
 
 function renderCart() {
     const cartDetails = document.querySelector('#cart-detail');
-    cartDetails.innerHTML = '';
-
-    cart.items.forEach((item) => cartDetails.append(renderCartItem(item)));
+    cartDetails.innerHTML = renderCartItems(cart.items);
     cartDetails.append(document.createElement('hr'));
     cartDetails.append(renderCartDiscount(cart.total.discount));
     cartDetails.append(renderCartShipping(cart.total.freeShipping, cart.total.shipping));

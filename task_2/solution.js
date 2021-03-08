@@ -1,13 +1,9 @@
-// - Булев тип
-// - и, или, не (с простой точки зрения)
-// - условия
-
 function calcShipping(sum, min, shipping) {
     let productSum = sum; // сумма в корзине
     let freeShippingMinSum = min; // минимальная цена для бесплатной доставки
     let shippingPrice = shipping; // стоимость доставки
 
-    // Задача №2.1. Рассчитать доставку
+    // Задание №2.1. Рассчитать доставку
 
     // создайте переменную shippingPrice
 
@@ -20,7 +16,7 @@ function calcShipping(sum, min, shipping) {
     // если productsSum > или равен freeShippingMinSum,
     // то shippingPrice присвоить значение 0
 
-    // Конец решения задачи №2.1.
+    // Конец решения задания №2.1.
 
     return shippingSum;
 }
@@ -30,7 +26,7 @@ function calcDiscount(sum, min, discount) {
     let discountMinSum = min; // минимальная цена для скидки
     let discountPart = discount; // величина скидки в процентах
 
-    // Задача №2.2. Рассчитать скидку
+    // Задание №2.2. Рассчитать скидку
 
     // создайте переменную discountPrice
 
@@ -40,7 +36,7 @@ function calcDiscount(sum, min, discount) {
 
     // замените if {...} else {...} на тернарный оператор
 
-    // Конец решения задачи №2.2.
+    // Конец решения задания №2.2.
 
     return discountSum;
 }
