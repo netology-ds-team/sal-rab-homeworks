@@ -5,6 +5,8 @@ window.addEventListener('load', () => {
     bindNotifications();
     loadProductsCards();
     bindCart();
+    bindBtns();
+    bindPhones();
 });
 
 function bindCart() {
@@ -41,11 +43,15 @@ function changeCartValues(price) {
         cartCountField.innerHTML = '0';
     }
 
+    let sum;
     try {
-        cartSumField.innerHTML = addInCartSumChange(+/\d+/.exec(cartSumField.innerHTML), +price);
+        sum = addInCartSumChange(+/\d+/.exec(cartSumField.innerHTML), +price);
     } catch {
-        cartSumField.innerHTML = '0 ₽'
+        sum = '0 ₽'
     }
+
+    cartSumField.innerHTML = sum;
+    document.querySelector('#request-sum').innerHTML = sum;
 }
 
 function renderCartItems(items) {
@@ -63,7 +69,7 @@ function renderCartItemWrapper(item) {
 function renderCartDiscount(discount) {
     const cartDiscount = document.createElement('div');
     cartDiscount.className = 'cart-item';
-    cartDiscount.innerHTML =`<div><strong>Скидка</strong></div><div><strong>${discount} ₽</strong></div>`;
+    cartDiscount.innerHTML = `<div>Скидка</div><div>${discount} ₽</div>`;
     return cartDiscount;
 }
 
@@ -89,4 +95,19 @@ function renderCart() {
     cartDetails.append(renderCartShipping(cart.total.freeShipping, cart.total.shipping));
     cartDetails.append(document.createElement('hr'));
     cartDetails.append(renderCartTotal(cart.total.total));
+}
+
+function bindBtns() {
+    document.querySelector('#send-request-btn').addEventListener('click', () => {
+        const address = {
+            street: document.querySelector('#field-address-street').value,
+            house: document.querySelector('#field-address-house').value,
+            entrance: document.querySelector('#field-address-entrance').value,
+            floor: document.querySelector('#field-address-floor').value,
+            flat: document.querySelector('#field-address-flat').value,
+        };
+        const name = document.querySelector('#field-name').value;
+        const phone = document.querySelector('#field-phone').value;
+        console.log(sendRequest(name, phone, address, cart.items, cart.total.total));
+    })
 }

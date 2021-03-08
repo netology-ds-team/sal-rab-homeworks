@@ -1,6 +1,6 @@
 function bindModals(
     btnOpenClass = 'modal-open',
-    btnCloseClass = 'modal-close',
+    btnCloseClass = 'close',
     dataTargetAttr = 'target',
     activeClass = 'is-active',
 ) {

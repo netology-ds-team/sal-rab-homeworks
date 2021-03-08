@@ -54,7 +54,8 @@
                                 data-id="1"
                                 data-price="500.00"
                                 data-title="Пицца"
-                        >Добавить в заказ</button>
+                        >Добавить в заказ
+                        </button>
                     </div>
                 </div>
                 <div class="is-one-quarter column">
@@ -66,7 +67,8 @@
                                 data-id="2"
                                 data-price="120.00"
                                 data-title="Чебурек"
-                        >Добавить в заказ</button>
+                        >Добавить в заказ
+                        </button>
                     </div>
                 </div>
             </div>
@@ -75,7 +77,7 @@
 
     <div class="modal" id="cart-modal">
         <div class="modal-background"></div>
-        <button class="modal-close is-large" aria-label="close"></button>
+        <button class="modal-close close is-large" aria-label="close"></button>
         <div class="modal-card">
             <header class="modal-card-head">
                 <p class="modal-card-title">Ваш заказ</p>
@@ -84,7 +86,80 @@
                 Корзина пуста
             </section>
             <footer class="modal-card-foot">
-                <button class="button is-success is-fullwidth">Отправить заказ</button>
+                <button class="button is-success is-fullwidth close modal-open" data-target="prepare-request">Оформить
+                    заказ
+                </button>
+            </footer>
+        </div>
+    </div>
+
+    <div class="modal" id="prepare-request">
+        <div class="modal-background"></div>
+        <button class="modal-close close is-large" aria-label="close"></button>
+        <div class="modal-card">
+            <section class="modal-card-body">
+                <div class="field">
+                    <p class="control has-icons-left">
+                        <input class="input" type="text" id="field-name" placeholder="Ваше имя"/>
+                        <span class="icon is-small is-left">
+                            <i class="fas fa-user"></i>
+                        </span>
+                    </p>
+                </div>
+                <div class="field">
+                    <p class="control has-icons-left">
+                        <input class="input" type="text" id="field-address-street" placeholder="Улица"/>
+                        <span class="icon is-small is-left">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </span>
+                    </p>
+                </div>
+                <div class="field">
+                    <p class="control has-icons-left">
+                        <input class="input" type="text" id="field-address-house" placeholder="Дом"/>
+                        <span class="icon is-small is-left">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </span>
+                    </p>
+                </div>
+                <div class="field">
+                    <p class="control has-icons-left">
+                        <input class="input" type="text" id="field-address-entrance" placeholder="Подъезд"/>
+                        <span class="icon is-small is-left">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </span>
+                    </p>
+                </div>
+                <div class="field">
+                    <p class="control has-icons-left">
+                        <input class="input" type="text" id="field-address-floor" placeholder="Этаж"/>
+                        <span class="icon is-small is-left">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </span>
+                    </p>
+                </div>
+                <div class="field">
+                    <p class="control has-icons-left">
+                        <input class="input" type="text" id="field-address-flat" placeholder="Квартира"/>
+                        <span class="icon is-small is-left">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </span>
+                    </p>
+                </div>
+                <div class="field">
+                    <p class="control has-icons-left">
+                        <input class="input" type="phone" id="field-phone" placeholder="Ваш номер телефона"/>
+                        <span class="icon is-small is-left">
+                            <i class="fas fa-phone"></i>
+                        </span>
+                    </p>
+                </div>
+                <div class="field">
+                    <p>Вы оформляете заказ на сумму <span id="request-sum"></span></p>
+                </div>
+            </section>
+            <footer class="modal-card-foot">
+                <button class="button is-success is-fullwidth close" id="send-request-btn">Подтвердить заказ</button>
             </footer>
         </div>
     </div>
@@ -93,6 +168,7 @@
 <script src="src/modal.js"></script>
 <script src="src/notification.js"></script>
 <script src="src/readJsonFile.js"></script>
+<script src="src/phone.js"></script>
 <script src="src/Cart.js"></script>
 <script src="src/createProductCards.js"></script>
 <script src="src/script.js"></script>
@@ -101,6 +177,7 @@
 <script src="task_2/solution.js"></script>
 <script src="task_3/solution.js"></script>
 <script src="task_4/solution.js"></script>
+<script src="task_final/solution.js"></script>
 
 </body>
 </html>
