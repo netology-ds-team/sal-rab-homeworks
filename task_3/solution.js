@@ -19,5 +19,3 @@ function renderCartItem(item) {
 
     return itemHTML;
 }
-
-
