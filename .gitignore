@@ -1,1 +1,8 @@
-# Created by .ignore support plugin (hsz.mobi)
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

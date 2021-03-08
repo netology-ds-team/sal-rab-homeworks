@@ -18,14 +18,14 @@ function bindCart() {
 
 function addInCartBtn(btn) {
     cart.addProduct(new Product(btn.dataset.id, btn.dataset.title, btn.dataset.price));
-    addInCartNotification(btn.dataset);
+    addInCartNotification(btn.dataset.title, btn.dataset.price);
     changeCartValues(btn.dataset.price);
     renderCart();
 }
 
-function addInCartNotification(...data) {
+function addInCartNotification(title, price) {
     try {
-        createNotification(addInCartMessage(data.title, data.price));
+        createNotification(addInCartMessage(title, price));
     } catch (e) {
         createNotification('error', false, 'danger');
     }

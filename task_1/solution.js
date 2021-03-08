@@ -1,5 +1,5 @@
-function addInCartMessage(name, price) {
-    let productName = name;
+function addInCartMessage(title, price) {
+    let productName = title;
     let productPrice = price;
 
     // Задача №1.1. Оповещение о добавлении в корзину
