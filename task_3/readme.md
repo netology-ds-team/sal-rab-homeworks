@@ -13,11 +13,10 @@
 Пишите весь код решения между строками 
 "Задание №3.1." и 
 "Конец решения задания №3.1."
-1. Сформируйте строку itemCountText вида 
-`${item.count} × ${item.price} ₽ = ${item.price * item.count} ₽`
-на основе объекта item
-2. Сформируйте строку itemHTML вида
-`<div class="cart-item"><div>${item.title}</div><div>${itemCountText}</div></div>`
+Сформируйте строку itemCountText вида 
+`${product.count} × ${product.price} ₽ = ${product.price * product.count} ₽`
+на основе объекта item, например:
+`5 × 500.00 ₽ = 2500 ₽`
 
 ### Как отправить решения на проверку
 1. Проверьте правильность решения с помощью автотестов task_3/test-runner.html

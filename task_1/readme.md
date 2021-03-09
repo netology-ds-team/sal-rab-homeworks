@@ -46,8 +46,6 @@
 1. Создайте переменную newValue
 2. Присвойте ей значение oldValue
 4. Увеличьте значение newValue на 1
-5. Замените все переменные, которым значения присваиваются единожды, на 
-[константы](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/const)
 
 ### Задание №1.3. Увеличение суммы в корзине
 

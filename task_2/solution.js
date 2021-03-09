@@ -34,8 +34,6 @@ function calcDiscount(sum, min, discount) {
     // то присвойте discountPrice значение discountPart процентов от productsSum,
     // иначе присвойте discountPrice значения 0
 
-    // замените if {...} else {...} на тернарный оператор
-
     // Конец решения задания №2.2.
 
     return discountSum;
@@ -57,7 +55,7 @@ function calcInvoice({sum, discountMinSum, discountPart, shippingFreeMinSum, shi
     // прибавьте к totalSum значение shippingSum
 
     // создайте переменную freeShipping
-    // запишите без использования if или тернарного оператора:
+    // запишите без использования if или любых других условий:
     // если shippingSum равно нулю, то freeShipping должна быть равна true, иначе freeShipping должна быть равна false
 
     // Конец решения задачи №2.3.

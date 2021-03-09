@@ -46,9 +46,7 @@
 2. если productsSum больше или равно discountMinSum,
 то присвойте discountPrice значение discountPart процентов от productsSum,
 иначе присвойте discountPrice значения 0
-3. замените if {...} else {...} на 
-[тернарный оператор](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Conditional_Operator)
-    
+
 ### Задание №2.3. Увеличение суммы в корзине
 #### Задача
 При клике на корзину открывается информация о заказанных позициях, 
@@ -68,7 +66,7 @@
 3. Уменьшите totalSum на discountSum
 4. Прибавьте к totalSum значение shippingSum
 5. Создайте переменную freeShipping
-6. Запишите без использования if или тернарного оператора:
+6. Запишите без использования if или любых других условий
 7. Если shippingSum равно нулю, 
 то freeShipping должна быть равна true, 
 иначе freeShipping должна быть равна false
