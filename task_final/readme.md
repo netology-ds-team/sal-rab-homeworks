@@ -1,5 +1,5 @@
 ## Итоговое задание к блоку "Основы разработки"
-Пишите код решения в файле `task_final/solutions.js`
+Пишите код решения в файле `task_final/solution.js`
 
 Автотесты запускаются в файле `task_final/test-runner.html`
 
