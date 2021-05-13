@@ -20,12 +20,13 @@
 Пишите весь код решения между строками 
 "Задание №2.1." и 
 "Конец решения задания №2.1."
-1. создайте переменную shippingPrice
-2. если productsSum равно 0, то shippingPrice присвоить значение 0;
+1. создайте переменную shippingSum
+2. если productsSum равно 0, 
+   то shippingSum присвоить значение 0;
 3. если productsSum больше нуля, но меньше freeShippingMinSum, 
-то shippingPrice присвоить значение shippingPrice;
+   то shippingSum присвоить значение shippingPrice;
 4. если productsSum > или равен freeShippingMinSum, 
-то shippingPrice присвоить значение 0.
+   то shippingSum присвоить значение 0.
 
 ### Задание №2.2. Увеличение количества в корзине
 #### Задача
