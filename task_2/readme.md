@@ -20,9 +20,10 @@
 Пишите весь код решения между строками 
 "Задание №2.1." и 
 "Конец решения задания №2.1."
-1. если productsSum равно 0, то shippingPrice присвоить значение 0;
-2. если productsSum > или равен freeShippingMinSum,
-то shippingPrice присвоить значение 0.
+1. если productsSum равно 0, то shippingSum присвоить значение 0;
+2. если productsSum больше или равен freeShippingMinSum,
+то shippingSum присвоить значение 0.
+3. В остальных случаях shippingSum присваивать значение shippingPrice
 
 ### Задание №2.2. Увеличение количества в корзине
 #### Задача
