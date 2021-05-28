@@ -42,5 +42,7 @@ function renderProductsCards(f) {
 }
 
 function loadProductsCards() {
-    readJsonFile("src/products.json", (data) => renderProductsCards(data));
+    readJsonFile("https://netology-ds-team.github.io/sal-rab-homeworks-sources/products.json",
+        (data) => renderProductsCards(data)
+    );
 }

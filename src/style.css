@@ -159,3 +159,22 @@
 .melt {
     opacity: 0;
 }
+
+.footer {
+    width: 100%;
+    min-height: 40px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    background-color: rgba(25, 26, 29, 0.6);
+    color: #a8a8ba;
+    padding: 12px;
+    font-size: small;
+    text-align: center;
+    transition: opacity 1s;
+}
+
+.footer:hover {
+    opacity: 1;
+}
