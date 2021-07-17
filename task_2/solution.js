@@ -1,5 +1,5 @@
 function calcShipping(sum, min, shipping) {
-    let productSum = sum; // сумма в корзине
+    let productsSum = sum; // сумма в корзине
     let freeShippingMinSum = min; // минимальная цена для бесплатной доставки
     let shippingPrice = shipping; // стоимость доставки
 
