@@ -31,8 +31,8 @@ function calcDiscount(sum, min, discount) {
     // создайте переменную discountPrice
 
     // если productsSum больше или равно discountMinSum,
-    // то присвойте discountPrice значение discountPart процентов от productsSum,
-    // иначе присвойте discountPrice значения 0
+    // то присвойте discountSum значение discountPart процентов от productsSum,
+    // иначе присвойте discountSum значение 0
 
     // Конец решения задания №2.2.
 
