@@ -43,7 +43,7 @@
 1. создайте переменную discountPrice
 2. если productsSum больше или равно discountMinSum,
 то присвойте discountSum значение discountPart процентов от productsSum,
-иначе присвойте discountSum значения 0
+иначе присвойте discountSum значение 0
 
 ### Задание №2.3. Увеличение суммы в корзине
 #### Задача
