@@ -55,6 +55,8 @@
 
 ![](readme-img/repo-settings.png)
 
+Настройки GitHub Pages находятся в разделе настроек проекта Pages
+
 ![](readme-img/repo-github-pages.png)
 
 ## Задания
