@@ -36,7 +36,7 @@ function addInCartCountChange(value) {
     // присвойте ей значение oldValue
     let newValue = oldValue;
     // увеличьте значение newValue на 1
-newValue = newValue + 1
+    newValue = newValue + 1
     // Конец решения задания №1.2.
 
     return newValue;
