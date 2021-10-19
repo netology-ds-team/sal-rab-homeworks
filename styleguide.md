@@ -46,8 +46,8 @@ function sum(a, b) {
 <span style="color: green; font-weight: bold">✓ Хорошо:</span>
 ```javascript
 function sum(a, b) {
-   let c = a + b;
-   return c;
+  let c = a + b;
+  return c;
 }
 ```
 
