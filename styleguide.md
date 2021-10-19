@@ -28,7 +28,7 @@ console.log(c);
 ```
 
 #### 3. Отступы
-Каждый вложенный логический блок отступает с левого края на 2 пробела дальше, чем блок, в который он вложен:
+Каждый вложенный логический блок отступает с левого края на 4 пробела дальше, чем блок, в который он вложен:
 
 <span style="color: red; font-weight: bold">✗ Плохо:</span>
 ```javascript
@@ -46,8 +46,8 @@ function sum(a, b) {
 <span style="color: green; font-weight: bold">✓ Хорошо:</span>
 ```javascript
 function sum(a, b) {
-  let c = a + b;
-  return c;
+    let c = a + b;
+    return c;
 }
 ```
 
