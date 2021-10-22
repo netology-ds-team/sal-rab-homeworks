@@ -60,9 +60,12 @@ function sum(a, b) {
 let a=1;
 let b=-4;
 let c=3;
+
 let d=b**2-4*a*c;
+
 let x1=(-b-Math.sqrt(d))/2/a;
 let x2=(-b+Math.sqrt(d))/2/a;
+
 console.log(x1,x2);
 ```
 
@@ -71,8 +74,39 @@ console.log(x1,x2);
 let a = 1;
 let b = -4;
 let c = 3;
+
+let d = b ** 2 - 4 * a * c;
+
+let x1 = (-b - Math.sqrt(d)) / 2 / a;
+let x2 = (-b + Math.sqrt(d)) / 2 / a;
+
+console.log(x1, x2);
+```
+
+#### 6. Отступы между логическими блоками
+Оставляйте между логическими блоками программы свободные строки
+
+<span style="color: red; font-weight: bold">✗ Плохо:</span>
+```javascript
+let a = 1;
+let b = -4;
+let c = 3;
 let d = b ** 2 - 4 * a * c;
 let x1 = (-b - Math.sqrt(d)) / 2 / a;
 let x2 = (-b + Math.sqrt(d)) / 2 / a;
+console.log(x1, x2);
+```
+
+<span style="color: green; font-weight: bold">✓ Хорошо:</span>
+```javascript
+let a = 1;
+let b = -4;
+let c = 3;
+
+let d = b ** 2 - 4 * a * c;
+
+let x1 = (-b - Math.sqrt(d)) / 2 / a;
+let x2 = (-b + Math.sqrt(d)) / 2 / a;
+
 console.log(x1, x2);
 ```
