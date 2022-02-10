@@ -6,3 +6,4 @@
 *.njsproj
 *.sln
 *.sw?
+*solution.js.bak
