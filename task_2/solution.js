@@ -17,6 +17,7 @@ function calcShipping(sum, min, shipping) {
     // то shippingSum присвоить значение shippingPrice
 
     // Конец решения задания №2.1.
+    // комментарий
 
     return shippingSum;
 }
