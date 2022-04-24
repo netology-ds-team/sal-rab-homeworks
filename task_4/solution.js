@@ -22,9 +22,9 @@ let data = JSON.parse(json);
 function renderProductsCards(json) {
     clearProducts();
     let products = parseProducts(json);
+    let length = products.length;
     
-    for (let i = 0; i = products.length - 1; i++) {
-         let addProduct = products[i];
-		 return addProduct;
+    for (let i = 0; i < length - 1; i++) {
+            addProduct(products[i]);
          }          
 };
