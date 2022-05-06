@@ -41,6 +41,6 @@ function sendRequest(name, phone, address, goods, sum)
     data.goods.push({title: goods[i].title, count: goods[i].count});
     }
 
-    let jsonData = JSON.stringify(data);
+    let jsonData = JSON.stringify({data});
 return jsonData;
 }
