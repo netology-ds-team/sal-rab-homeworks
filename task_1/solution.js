@@ -28,7 +28,8 @@ function addInCartMessage(title, price) {
 }
 
 function addInCartCountChange(value) {
-
+    //исправление некорректных комментариев задания
+    let oldValue = value;
     // Задание №1.2. Увеличение количества в корзине
 
     // создайте переменную newValue
