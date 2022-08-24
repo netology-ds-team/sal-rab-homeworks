@@ -9,17 +9,18 @@ function addInCartMessage(title, price) {
     // присвойте переменной message значение переменной productName
     message = productName;
     // добавьте в конец переменной message пробел
-    message = message + " ";
+    message = message + ' ';
     // добавьте в конец переменной message текст 'за'
-    message = message + "за";
+    message = message + 'за';
     // добавьте в конец переменной message пробел
-    message = message + " ";
+    message = message + ' ';
     // добавьте в конец переменной message значение переменной productPrice
-    message = message + "productPrice";
+    message = message + productPrice;
     // добавьте в конец переменной message пробел
-    message = message + " ";
+    message = message + ' ';
     // добавьте в конец переменной message текст 'теперь в корзине!'
-    message = message + "теперь в корзине!";
+    message = message + 'теперь в корзине!';
+
     // выведите переменную message в консоль
     console.log(message);
     // какой-нибудь комментарий
@@ -35,9 +36,10 @@ function addInCartCountChange(value) {
     // создайте переменную newValue
     let newValue;
     // присвойте ей значение oldValue
-    let newValue = oldValue;
+    newValue = oldValue;
     // увеличьте значение newValue на 1
-    let newValue = newValue + "1";
+    newValue = newValue + 1;
+
     // Конец решения задания №1.2.
 
     return newValue;
@@ -50,11 +52,12 @@ function addInCartSumChange(sum, delta) {
     // Задание №1.3. Увеличение суммы в корзине
 
     // создайте переменную newSum и присвойте ей сумму oldSum и difference
-    let newSum = "oldSum" + "difference";
+    let newSum; 
+    newSum = oldSum + difference;
     // создайте переменную newSumText и присвойте ей результат склеивания переменной newSum и текста ' ₽'
-    let newSumText = newSum + ' ₽';
+    newSumText = newSum + ' ₽';
     // замените склеивание, используемое в newSum Text на шаблонную строку
-    let newSumText = `${newSum} ₽`;
+    newSumText = `${newSum} ₽`;
     // Конец решения задания №1.3.
 
     return newSumText;
