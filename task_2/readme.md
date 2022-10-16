@@ -52,7 +52,7 @@
 Пишите весь код решения между строками 
 "Задание №2.2." и 
 "Конец решения задания №2.2."
-1. создайте переменную discountPrice
+1. создайте переменную discountSum
 2. если productsSum больше или равно discountMinSum,
 то присвойте discountSum значение discountPart процентов от productsSum,
 иначе присвойте discountSum значение 0
